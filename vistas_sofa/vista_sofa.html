@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--- Templates bootstrap -->
+        <!--Pagina de estilo e bootstrap-->
+        <link rel="stylesheet" href="../styles/style.css">
+		<link href="../styles/bootstrap.min.css" rel="stylesheet">
+		<meta charset="UTF-8" />
+		<title>Sofa JIMI</title>
+		<link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+	</head>
+	<body id="normalView" style="background-color: #d3d3d3">
+		<nav class="navbar navbar-dark bg-dark">
+			<div class="container">
+				<a class="navbar-brand" href="produtos.html">Produtos la-redout</a>
+			</div>
+		</nav>
+		<p></p>
+		<div class="container" style="background-color: #ffff">
+			<div class="row justify-content-center h-100">
+				<div class="col-2">
+					<br>
+					<button type="button" class="btn btn-dark" onclick="location.href='../produtos.html'"><- Ver produtos</button>
+				</div>
+			<div class="col-10">
+			</div>
+		</div>
+		<div class="container" style="background-color: #ffff">
+			<div class="row justify-content-center h-100">
+				<div class="col-9 align-self-center text-center">
+					<div class="card-body">
+						<div class="card-text">
+							<div class="sup">
+								<canvas id="myCanvas" class="mainCanvas"></canvas>
+								<a class="botonimagen" href="vista_aumentada_sofa.html"></a>
+							</div>
+							<br>
+							<p> 
+								Zoom:
+								<button id="btn_zoomIn" type="button" class="btn btn-dark btn-sm">+</button>
+								<button id="btn_zoomOut" type="button" class="btn btn-dark btn-sm">-</button>
+								<button id="btn_changeLight" type="button" class="btn btn-dark btn-sm">Mudar luz</button>
+								<select id="lightSelector" class="browser-default custom-select btn-sm">
+									<option value="1">Luz ezquerda</option>
+									<option value="2">Luz direita</option>
+									<option value="3">Luz da cima</option>
+									<option value="4">Luz da baixo</option>
+								</select>
+								<button id="btn_resetLight" type="button" class="btn btn-dark btn-sm">Repor luz</button>
+								<button id="btn_ativarAnimacao" type="button" class="btn btn-dark btn-sm">Ativar animação</button>
+								<select id="animationSelector" class="browser-default custom-select btn-sm">
+									<option value="1">Mostrar almofadas de encosto</option>
+									<option value="2">Mostra almofadas de assento</option>
+									<option value="3">Mostra almofadas</option>
+								</select>
+								<p></p>
+								<button id="btn_rotation" type="button" class="btn btn-dark btn-sm">Ativar rotação</button>
+								<button id="btn_reporObjeto" type="button" class="btn btn-dark btn-sm">Repor objeto</button>
+								</p>
+						</div>
+					</div>
+                </div>  
+				<div class="col-3">
+					<div class="card-body">
+						<div class="card-title">
+							<a href="https://www.laredoute.pt/ppdp/prod-324525831.aspx?docid=873120&dim1=8#searchkeyword=sofa%20&shoppingtool=search" 
+							target="_blank" class="title">Sofa JIMI</a>
+						</div>
+						<div class="card-text">
+							<p>
+								Sofá 3 lugares, JIMI - LA REDOUTE INTERIEURS
+								<br><br>
+								O sofá 3 lugares, Jimi. Cor moderna e conforto muito macio, este sofá conjuga-se perfeitamente numa sala de inspiração nórdica com móveis 
+								em tons claros para uma decoração suave e acolhedora.
+								<br><br>
+								Encontre todos os sofas em laredoute.pt								
+							</p>
+							<div class="text-center">
+								<a href="https://www.laredoute.pt/ppdp/prod-324525831.aspx?docid=873120&dim1=8#searchkeyword=sofa%20&shoppingtool=search" class="btn btn-dark btn-lg" target="_blank">Ver em loja</a>
+							</div>
+						</div>
+					</div>	
+                </div>
+			</div>
+		</div>
+		
+		<script src="../node_modules/three/build/three.js"></script>
+		<script src="../node_modules/three/examples/js/loaders/GLTFLoader.js"></script>
+		<script src="../node_modules/three/examples/js/controls/OrbitControls.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>

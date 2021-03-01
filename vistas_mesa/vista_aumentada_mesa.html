@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--- Templates bootstrap -->
+        <!--Pagina de estilo e bootstrap-->
+        <link rel="stylesheet" href="../styles/style.css">
+		<link href="../styles/bootstrap.min.css" rel="stylesheet">
+		<meta charset="UTF-8" />
+		<title>Mesa LaRedoute</title>
+		<link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+	</head>
+	<body>
+		<nav class="navbar navbar-dark bg-dark">
+			<div class="container">
+				<a class="navbar-brand" href="produtos.html">Produtos la-redout</a>
+			</div>
+		</nav>
+		<p></p>
+		<div class="row justify-content-center h-100">
+			<div class="2">
+			</div>
+			<div class="col-9">
+				<a href="https://www.laredoute.es/ppdp/prod-350054826.aspx#searchkeyword=mesa&shoppingtool=search" 
+					class="title" target="blank">Mesa adeleita</a>
+			</div>
+			<div class="col-1">
+				<button type="button" class="btn btn-dark text-right" onclick="location.href='vista_mesa.html'"><- Voltar atrás</button>
+			</div>
+		</div>
+		<div  style="background-color: #ffff">
+			<div class="row justify-content-center h-100">
+				<div class="col-10 align-self-center text-center">
+					<canvas id="myCanvas" class="fullScreenCanvas"></canvas>
+				</div>
+			</div>
+		</div>
+
+		<nav class="navbar fixed-bottom navbar-light text-center" style="background-color: #D9E4EC;">
+			<p></p>
+			<button id="btn_mudarVisualizacao" type="button" class="btn btn-dark">Mudar visualização</button>
+			<select id="cameraSelector" class="browser-default custom-select">
+				<option value="1">Esquerda</option>
+				<option value="2">Direita</option>
+				<option value="3">Topo</option>
+				<option value="4">Fundo</option>
+			</select>
+			
+			<button id="btn_mudarCor" type="button" class="btn btn-dark">Mudar cor</button>
+			<select id="colorSelector" class="browser-default custom-select">
+				<option value="1">Azul</option>
+				<option value="2">Roxa</option>
+				<option value="3">Verde</option>
+				<option value="4">Vermelho</option>
+			</select>
+			<button id="btn_reporCor" type="button" class="btn btn-dark">Repor cor</button>
+			<button id="btn_rotation" type="button" class="btn btn-dark">Ativar rotação</button>
+			<button id="btn_reporObjeto" type="button" class="btn btn-dark">Repor objeto</button>
+			<p></p>
+		</nav>
+
+		<script src="../node_modules/three/build/three.js"></script>
+		<script src="../node_modules/three/examples/js/loaders/GLTFLoader.js"></script>
+		<script src="../node_modules/three/examples/js/controls/OrbitControls.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>

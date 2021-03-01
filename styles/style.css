@@ -1,0 +1,47 @@
+body {
+	overflow: hidden;
+	margin: 0;
+}
+		
+.title {
+	color: #24242C;
+	font-weight: lighter;
+	font-size: 40px;
+	font-family: verdana;
+	text-decoration: none;
+}
+
+.mainCanvas {
+	width: 800px;
+	height: 450px;
+}
+
+.fullScreenCanvas {
+	width: 100%;
+	max-width: 1920px; /* Resolucao FHD */
+}
+
+.subtitle {
+	color: black;
+	font-size: 20px;
+	font-family: verdana;
+}
+#myCanvas {
+	display: block;
+}
+
+.sup {
+	display: inline-block;
+	position: relative;
+}
+
+.sup a {
+	position: absolute;
+	bottom: 1em;
+	right: 1em;
+	background-image: url(../images/fullScreen.png);
+	height: 28px;
+	width: 28px;
+	background-position: center;
+	background-size: cover;
+}
